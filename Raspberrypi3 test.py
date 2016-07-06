@@ -1,13 +1,14 @@
 #Install the raspberry pi 3  library in a Terminal window using
 
-$ sudo pip install rrb3
+$ sudo pip install rrb3 
 
 #Open a Python console by typing the following into a Terminal window:
 
 $ sudo python #(python 2)
 $ sudo apt-get (python #(python 3)
 
-import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO # imports general-purpose input/output (GPIO) is a generic pin on an integrated circuit 
+#whose behavior—including whether it is an input or output pin—is controllable by the user at run time.
 import time
 
 #type the following, one line at a time:
