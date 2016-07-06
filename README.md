@@ -3,9 +3,9 @@ This project is a homework assignment that requires us to contribute to and or m
 #THREE OPEN SOURCE PROJECTS
 -[samuelclay/Raspberry-Pi-Photo-Frame](https://github.com/samuelclay)
 
--[claywebb/robot-framework](https://github.com/samuelclay)
+-[claywebb/robot-framework](https://github.com/claywebb/robot-framework)
 
--[jpescada/TwitterPiBot] (https://github.com/samuelclay)
+-[jpescada/TwitterPiBot](https://github.com/jpescada/TwitterPiBot)
 
 #GOAL FOR EACH PROJECT
 -[samuelclay/Raspberry-Pi-Photo-Frame](https://github.com/samuelclay)
@@ -16,7 +16,7 @@ This project is a homework assignment that requires us to contribute to and or m
   
   -[] attempt to get modifications accepted by original project
   
--[claywebb/robot-framework](https://github.com/samuelclay)
+-[claywebb/robot-framework](https://github.com/claywebb/robot-framework)
 
   -[] improve documentation
   
@@ -26,7 +26,7 @@ This project is a homework assignment that requires us to contribute to and or m
   
   -[] attempt to get modifications accepted
   
--[jpescada/TwitterPiBot](https://github.com/samuelclay)
+-[jpescada/TwitterPiBot](https://github.com/jpescada/TwitterPiBot)
 
   -[] add motion sensor
   
