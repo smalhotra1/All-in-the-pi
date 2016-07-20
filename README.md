@@ -66,7 +66,9 @@ $ sudo pip install rrb3
 Calendar
 
 $sudo pip install google-api-python-client (edited)
+
 $pip install oauth2client
+
 $pip install httplib2
 
 Test-to-speech
