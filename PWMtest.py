@@ -1,16 +1,16 @@
-To create a PWM instance:
+#To create a PWM instance:
 p = GPIO.PWM(channel, frequency)
-To start PWM:
+#To start PWM:
 p.start(dc)   # where dc is the duty cycle (0.0 <= dc <= 100.0)
-To change the frequency:
+#To change the frequency:
 p.ChangeFrequency(freq)   # where freq is the new frequency in Hz
-To change the duty cycle:
+#To change the duty cycle:
 p.ChangeDutyCycle(dc)  # where 0.0 <= dc <= 100.0
-To stop PWM:
+#To stop PWM:
 p.stop()
-Note that PWM will also stop if the instance variable 'p' goes out of scope.
+#Note that PWM will also stop if the instance variable 'p' goes out of scope.
 
-An example to blink an LED once every two seconds:
+#An example to blink an LED once every two seconds:
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(12, GPIO.OUT)
@@ -20,7 +20,7 @@ p.start(1)
 input('Press return to stop:')   # use raw_input for Python 2
 p.stop()
 GPIO.cleanup()
-An example to brighten/dim an LED:
+#An example to brighten/dim an LED:
 import time
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)

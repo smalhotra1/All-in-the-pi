@@ -2,13 +2,15 @@ from __future__ import print_function
 import httplib2
 
 import os
+import datetime
 
 from apiclient import discovery
 import oauth2client
 from oauth2client import client
 from oauth2client import tools
 
-import datetime
+#needed for opening browser
+import webbrowser
 
 try:
     import argparse
@@ -18,10 +20,9 @@ except ImportError:
 
 # If modifying these scopes, delete your previously saved credentials
 # at ~/.credentials/calendar-python-quickstart.json
-SCOPES = 'https://www.googleapis.com/auth/calendar.readonly'
+SCOPES = 'https://www.googleapis.com/auth/calendar'
 CLIENT_SECRET_FILE = 'client_secret.json'
 APPLICATION_NAME = 'Google Calendar API Python Quickstart'
-
 
 def get_credentials():
     """Gets valid user credentials from storage.
@@ -57,6 +58,11 @@ def main():
     Creates a Google Calendar API service object and outputs a list of the next
     10 events on the user's calendar.
     """
+
+    #url to calendar
+
+    url = "https://calendar.google.com/calendar/embed?src=msieklu2%40gmail.com&ctz=America/Chicago"
+
     credentials = get_credentials()
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('calendar', 'v3', http=http)
@@ -73,6 +79,7 @@ def main():
     for event in events:
         start = event['start'].get('dateTime', event['start'].get('date'))
         print(start, event['summary'])
+        webbrowser.open(url, new=0, autoraise=True)
 
 
 if __name__ == '__main__':
