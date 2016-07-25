@@ -1,0 +1,6 @@
+$ cd ~
+$ git clone https://github.com/simonmonk/raspirobotboard3.git
+$ cd raspirobotboard3/python
+$ sudo python setup.py install
+$ sudo python
+

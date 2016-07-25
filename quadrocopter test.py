@@ -80,17 +80,50 @@ class Robot(object):
 
         GPIO.setup(3, GPIO.IN)                            #Right sensor connection
         GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_UP) #Left sensor connection
-
+    
     # Move Function (forward and back)
     def move(self, arg0, arg1):
         print "move"
+        self.__leftWheels.append(5)
+        self.__rightWheels.append(5)
         # arg0 is speed
         # arg1 is time (optional)
+        #alternative code for movement
+        rr.forward()
+        
 
     def turn(self, arg0, arg1):
         print "turn"
         # arg0 is change in degree (positive is clockwise, negative is counterclockwise)
         # arg1 is speed at which to pivot
+    turn_time = random.randint(1, 3)
+    if random.randint(1, 2) == 1:
+        rr.left(turn_time, 0.5) # turn at half speed
+    else:
+        rr.right(turn_time, 0.5)
+    rr.stop()
+
+try:
+    while True:
+        distance = rr.get_distance()
+        print(distance)
+        if distance < 50 and running:
+            turn_randomly()
+        if running:
+            rr.forward(0)
+        if rr.sw2_closed():
+            running = not running
+        if not running:
+            rr.stop()
+        time.sleep(0.2)
+finally:
+    print("Exiting")
+    rr.cleanup()
+
+    def moveDistance(self, arg0):
+        print "move distance"
+        # arg0 is distance in feet
+
 
     def moveDistance(self, arg0):
         print "move distance"

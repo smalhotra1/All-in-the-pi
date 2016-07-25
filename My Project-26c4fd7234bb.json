@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "analog-analyzer-137722",
+  "private_key_id": "26c4fd7234bbcb43525d1a44ac7fcd8f6ed5a0dc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCLTno1BcGfIzXZ\n3l4FhuBWZ+dK3z6YmDqOiBq6PODu0lrB9+3ZwL+xQI1qq2ZfeRmNJlbfsxr7+esD\nYPVFM3GXGgkDJPyHXUJYwq1R+Cqvi+MHznKFnxBcAxevXzpVfn4TfxFIVLlz+IJe\nLkv/mWKKCCHwy4+eXXD6tp5BTR5/8w5qBemhcU25EMjnFl3a2udy/8hOjFwqXaF1\nyLWiHAxQZpxXh033d+xKlFoPmcD42brXgm/zTE4ssjrE0/5f2eG0FUtLCiOdFPaY\nnla7UqFf0L03jF+96pUBOF3J2GyQ8pRMx165WFotfa3EZeM3s4wOGBNMGfCeZMlr\nRdyF5mDbAgMBAAECggEBAIFu3SU+v/P4ZySS85D3DKG70K9EVYi6iE2+L/cycVv0\nntbyYVCdQn6Sl9KwhmHWxuLa6ITYiQ3t22o8QCeX8MaQLid5yhiLkgWefCNZDXAl\n7T9nlgiJDk4voWYUeMLO0J2Uxp4J+nXCRH71TS+jeGb/v2lX+Y0PDNYlr0zFNr1x\n2la+HEw6wED6Pn/ymbGzvUhiXzOuiXbcwc+r1h3OWVakIwkHYDa4LrFebz4n7bya\ndywsgDs4A2w2wRdF2mnp+Fu1Y1ZPKFuL3+uv/8x9jUpXYSjtzTX96yAcpiNmYbZq\ndd5UrlGoH2giF4X3ReZ98zbM2jywyd+5cB/f4iVofWECgYEA1NO/fUFW89whjfRO\n1JEBFHg5NDfhVAjqYX2jCHXZnFoCSOr3jVS5wA5sl21PkT92sNsKUwKueAx3vxvH\nkXcMvc6a01itSSLPyffRCqnKR0daGSiFOIHw7V7TSgsJORIPlFRyaICmxeq8eaSi\nxOPEfJ1tfxkeUIlneTqX3fk2ch0CgYEAp5DB4ONgtbvLkHf6xQ25rMnXNj4yXg7T\nJwdGdiAD2W6xK8P24kKd/yBNXBmsu4TRMGazjuhXezJ/vtFLlOrNB57bn1UmbGsE\nOwq2rk8xkguHUzg//AzKlI5EKE/Z0xllv4rHBsaqnNHB3GQtaskp084Zcl/WSBQI\nqkV/p+vorVcCgYBUxje7c+Bn6KJxAgS4hT3x4mWe2DdoGtkJllrvjsnsjqnkU7vh\nzwLibpxwwPj1uVrU3ZtCL4pBhW3ZcP5QgiRQItDnKKZ1wGkWYSEiZzmMpO5NoSdX\nt+K5GpF9J+I3mmscQXsFB2Hm6jbDGYJAfR2SKb8o5l994w2Va3J8170JPQKBgEiI\nt/QyWP2yEhcyaIH+Q/6QzLE1UTY38p01YAHoL+JiMR1B0c/1iFEU2YfhsUzm3Gq4\nOkfFOYEhxfyCutX2odQHpwgcoupRlN498AAaVdnjVavncIMZwmN2BfjxP9hKaSn1\n19uOCfKiNenCD4rnE00VLRy+cZJ34ZxbQzwcOXc3AoGAFkz+IiKkRyJpAeGQ+Kjl\nBo/NVQXTxHSGMSBIYPRB4cWOz7dUAoDIFJbYSkiJ2gdM1xxRJ0CZn/2KQw7y9nS/\nbE8bNAk+njTeUOXR6lnhqbhVR94+3cH47du5Oqqit1nkne/unJNyrRQcpH6WSq4T\nE1m+aXUbgsYVD1wLR3rrbls=\n-----END PRIVATE KEY-----\n",
+  "client_email": "shefalirasberrypi@analog-analyzer-137722.iam.gserviceaccount.com",
+  "client_id": "101054777514041181902",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shefalirasberrypi%40analog-analyzer-137722.iam.gserviceaccount.com"
+}

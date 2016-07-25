@@ -1,0 +1,4 @@
+oauth2client
+apiclient
+flickrapi==1.4.4
+requests
