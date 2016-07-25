@@ -12,6 +12,11 @@ from oauth2client import tools
 #needed for opening browser
 import webbrowser
 
+#text to speech library
+import pyttsx
+
+engine = pyttsx.init()
+
 try:
     import argparse
     flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
@@ -60,8 +65,7 @@ def main():
     """
 
     #url to calendar
-
-    url = "https://calendar.google.com/calendar/embed?src=msieklu2%40gmail.com&ctz=America/Chicago"
+    url = "https://calendar.google.com/calendar/embed?src=theraspberrianproject%40gmail.com&ctz=America/Chicago"
 
     credentials = get_credentials()
     http = credentials.authorize(httplib2.Http())
@@ -79,7 +83,9 @@ def main():
     for event in events:
         start = event['start'].get('dateTime', event['start'].get('date'))
         print(start, event['summary'])
-        webbrowser.open(url, new=0, autoraise=True)
+        engine.say(event['summary'])
+        engine.runAndWait()
+        #webbrowser.open(url, new=0, autoraise=True)
 
 
 if __name__ == '__main__':
