@@ -58,12 +58,14 @@ def get_credentials():
     return credentials
 
 def main():
+    print ("about to read events from the list")
+    eve(Thread)
+def eve( Thread):
     """Shows basic usage of the Google Calendar API.
 
     Creates a Google Calendar API service object and outputs a list of the next
     10 events on the user's calendar.
     """
-
     #url to calendar
     url = "https://calendar.google.com/calendar/embed?src=theraspberrianproject%40gmail.com&ctz=America/Chicago"
 
@@ -72,23 +74,38 @@ def main():
     service = discovery.build('calendar', 'v3', http=http)
 
     now = datetime.datetime.utcnow().isoformat() + 'Z' # 'Z' indicates UTC time
+
     print('Getting the upcoming 10 events')
     eventsResult = service.events().list(
         calendarId='primary', timeMin=now, maxResults=10, singleEvents=True,
         orderBy='startTime').execute()
     events = eventsResult.get('items', [])
+    engine = pyttsx.init()
+    voices = engine.getProperty('voices')
+    volume = engine.getProperty('volume')
+
+    for voice in voices:
+        engine.setProperty('volume', volume - 10.25)
+        engine.setProperty('voice', voices[1].id)
+
+        #engine.say("these are the events in calender")
+    #engine.runAndWait()
 
     if not events:
         print('No upcoming events found.')
     for event in events:
         start = event['start'].get('dateTime', event['start'].get('date'))
+        time.sleep(2)
+
         print(start, event['summary'])
         engine.say(event['summary'])
         engine.runAndWait()
-        #webbrowser.open(url, new=0, autoraise=True)
-
+    #t = threading.Timer(4.0, event)
+    #t.start()
+    #webbrowser.open(url, new=0, autoraise=True)
 
 if __name__ == '__main__':
     main()
+
 
 
